@@ -1,0 +1,20 @@
+{
+    "apis": [
+        {
+            "url": "https://api.varmon.io",
+            "token": "<token>"
+        }
+    ],
+    "flows": {
+        "Soma": ["deve retornar 4 como resultado da soma de 2 + 2"],
+        "Subtracão": ["deve retornar 2 como resultado da subtracao de 4 - 2"],
+        "Multiplicacao": [
+            "deve trazer 9 como resultado da multiplicacao de 3 x 3",
+            "deve trazer 0 como resultado da multiplicacao de 2 x 0"
+        ],
+        "Divisao": [
+            "deve trazer 5 como resultado da divisao de 15 por 3",
+            "deve trazer a mensagem - 'Erro' quando houver uma divisao por zero"
+        ]
+    }
+}

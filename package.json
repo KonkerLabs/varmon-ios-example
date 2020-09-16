@@ -1,0 +1,46 @@
+{
+  "name": "calculator-ios-automation",
+  "version": "1.0.0",
+  "description": "calculator-ios-automation",
+  "license": "MIT",
+  "engines": {
+    "node": ">= 8.10"
+  },
+  "main": "index.js",
+  "types": "index.d.ts",
+  "files": [
+    "index.d.ts"
+  ],
+  "dependencies": {
+    "appium": "^1.16.0",
+    "jest": "^26.2.2",
+    "varmon-jest": "^1.0.6",
+    "webdriverio": "~5.22.4"
+  },
+  "scripts": {
+    "typecheck": "tsc",
+    "test": "jest --projects test/jest.config.js --detectOpenHandles",
+    "build": "tsc -p tsconfig.build.json",
+    "watch": "tsc -p tsconfig.build.json --watch",
+    "appium": "appium",
+    "appium:doctor": "appium-doctor",
+    "exec": "varmon --projects test --detectOpenHandles",
+    "version": "standard-version --no-verify"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "*.{js,ts,tsx}": "npm run lint"
+  },
+  "devDependencies": {
+    "@types/jest": "^25.1.4",
+    "jest-circus": "^25.2.3",
+    "lint-staged": "^10.2.11",
+    "prettier": "^2.0.5",
+    "ts-jest": "^25.2.1",
+    "typescript": "^3.7.4"
+  }
+}

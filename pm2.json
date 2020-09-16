@@ -1,0 +1,9 @@
+{
+  "apps": [
+    {
+      "name": "calculator-ios-automation",
+      "script": "./node_modules/.bin/varmon",
+      "args" : "--projects test --detectOpenHandles"
+    }
+  ]
+}
